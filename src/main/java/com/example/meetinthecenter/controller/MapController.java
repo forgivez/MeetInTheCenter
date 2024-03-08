@@ -17,7 +17,8 @@ public class MapController {
     }
     @GetMapping("/test")
     public String TestPage() {
-        System.out.println("/test");
+        System.out.println("/test 요청");
         return "map2";
     }
+    
 }
