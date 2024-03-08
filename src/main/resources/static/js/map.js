@@ -4,9 +4,6 @@ var mapOptions = {
     zoom: 8                                                 // 초기 줌상태
 };
 var map = new naver.maps.Map('map-container', mapOptions);
-<<<<<<< HEAD
-
-=======
 var markerList = [];        // 클릭 마커 배열저장
 var centerMarker = [];      // 센터 마커 저장
 var menuLayer = $('<div style="position:absolute;z-index:10000;background-color:#fff;border:solid 1px #333;padding:10px;display:none;"></div>');
@@ -54,9 +51,9 @@ naver.maps.Event.addListener(map, 'click', function(e) {
         let center_point_x = ((x1 + x2) / 2)
         let center_point_y = ((y1 + y2) / 2)
         document.getElementById('info-content').innerHTML = '직선 거리 ' + dis_value.toFixed(1) + 'Km' + '<br>'
-                                                                    + '가운데 지점 좌표값'
-                                                                    + '<br>lng : ' + center_point_x
-                                                                    + '<br>lat : ' +  center_point_y;
+            + '가운데 지점 좌표값'
+            + '<br>lng : ' + center_point_x
+            + '<br>lat : ' +  center_point_y;
         document.getElementById('info-container').classList.add('active');
         let center_coord = {'y': center_point_y, '_lat': center_point_y, 'x': center_point_x, '_lng': center_point_x}
         let center_marker = new naver.maps.Marker({
@@ -110,7 +107,6 @@ naver.maps.Event.addListener(map, 'rightclick', function(e) {
 
 
 //상세정보창 표출
->>>>>>> a047861885aabb8133a88296ad01d15bcb01098a
 function searchLocation() {
     var searchInput1 = document.getElementById('search-input1').value;
     var searchInput2 = document.getElementById('search-input2').value;
@@ -118,9 +114,6 @@ function searchLocation() {
     // 임시로 alert로 정보를 보여주는 예시 코드
     document.getElementById('info-content').innerHTML = '검색어 1: ' + searchInput1 + '<br>검색어 2: ' + searchInput2;
     document.getElementById('info-container').classList.add('active');
-<<<<<<< HEAD
-}
-=======
 }
 
 //거리 계산 함수
@@ -131,4 +124,3 @@ function distance(x1, x2, y1, y2) {
 //TO DO
 //센터 좌표 반경 1~3km 이내 설정
 
->>>>>>> a047861885aabb8133a88296ad01d15bcb01098a
