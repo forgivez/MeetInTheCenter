@@ -1,4 +1,17 @@
+<<<<<<< HEAD
 
 logging:
   level:
     root : debug
+=======
+spring:
+  thymeleaf:
+    cache: false
+    prefix: classpath:templates/
+    suffix: .html
+  devtools:
+    livereload:
+      enabled: true
+server:
+  port: 8989
+>>>>>>> a047861885aabb8133a88296ad01d15bcb01098a
