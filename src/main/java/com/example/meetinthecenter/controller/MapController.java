@@ -7,12 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
 public class MapController {
-<<<<<<< HEAD
-    private final Logger log = LoggerFactory.getLogger(this.getClass().getSimpleName());
-=======
     //private final Logger log = LoggerFactory.getLogger(this.getClass().getSimpleName());
->>>>>>> a047861885aabb8133a88296ad01d15bcb01098a
-
     @GetMapping("/")
     public String MainPage() {
         //log.info("/");
