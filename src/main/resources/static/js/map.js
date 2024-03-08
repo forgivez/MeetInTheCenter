@@ -50,8 +50,8 @@ naver.maps.Event.addListener(map, 'click', function(e) {
         let dis_value = distance(x1,x2,y1,y2) * 100;       //두점사이의 거리 km 단위
         let center_point_x = ((x1 + x2) / 2)
         let center_point_y = ((y1 + y2) / 2)
-        document.getElementById('info-content').innerHTML = '두점 사이의 거리 ' + dis_value.toFixed(1) + 'Km' + '<br>'
-                                                                    + '두점 사이의 센터 좌표'
+        document.getElementById('info-content').innerHTML = '직선 거리 ' + dis_value.toFixed(1) + 'Km' + '<br>'
+                                                                    + '가운데 지점 좌표값'
                                                                     + '<br>lng : ' + center_point_x
                                                                     + '<br>lat : ' +  center_point_y;
         document.getElementById('info-container').classList.add('active');
